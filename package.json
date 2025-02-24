@@ -1,12 +1,15 @@
 {
       "name": "product-listing",
+      "homepage": "https://elamli9.github.io/ELAMLI_SHOP/",
       "private": true,
       "version": "0.0.0",
       "type": "module",
       "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "preview": "vite preview"
+        "preview": "vite preview",
+            "predeploy":"npm run build",
+        "deploy":"gh-pages -d dist"
       },
       "dependencies": {
         "firebase": "^10.8.0",
